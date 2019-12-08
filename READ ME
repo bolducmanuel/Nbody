@@ -1,0 +1,11 @@
+READ ME
+
+In this repository, you will find nbody.py, the file used to run my nbody simulations. Parts 1 to 4 are accounted for in the code. To run a desired section, just comment out the relevant lines identified in the main function at the end of the script. 
+
+For part 1 and part 2, we use a 50x50 grid, to accelerate the run time. 
+
+We bump up the gridsize for part 3 and 4 to 500x500, in order to have a more precise simulation when using many particles. 
+
+In all 4 cases, we use a simple forward euler step implementation to evolve our simulation. We know this method is not energy conservative. However, for part 3 and 4 especially, since our masses are so small they do not affect the kinetic energy as much and thus the energy looks like it is conserved fairly well, as the total potential energy almost remains constant throughout the simulation. 
+
+Finally, for all 4 parts we include animations of our simulations which you can find in this repository.
