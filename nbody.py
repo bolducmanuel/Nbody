@@ -171,7 +171,7 @@ class particles:
 		#Potential Energy
 		self.pot=-0.5*np.sum(self.potential())
 		#Kinetic Energy
-		self.kinene=0.5*self.m*(np.sum(self.vx**2)+np.sum(self.vy**2))
+		self.kinene=0.5*self.m*(np.sum(self.m*(self.vx**2+self.vy**2)))
 		#Total Energy
 		self.energy=self.pot+self.kinene
 		
